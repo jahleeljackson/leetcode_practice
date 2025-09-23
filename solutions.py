@@ -30,7 +30,10 @@ x =  '''
 
     **Hashmap**
 
-    
+    Ransom Note:
+    - create hashmaps for both strings
+    - iterate through strings and store number letters in each
+    - return False if number of particular letter in magazine is less than in ransom note
     '''
 
 
