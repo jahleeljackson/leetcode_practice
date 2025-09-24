@@ -34,6 +34,15 @@ x =  '''
     - create hashmaps for both strings
     - iterate through strings and store number letters in each
     - return False if number of particular letter in magazine is less than in ransom note
+
+    **Intervals**
+
+    Summary Range:
+    - iterate through array
+    - if at last element of array, append range to list
+    - if not at last element and next element is consecutive, continue
+    - if not at last element and next element is not consecutive (ie. [..., 6, 8,..]), 
+        append range to array and set start as next element (ie. start = 8)
     '''
 
 
