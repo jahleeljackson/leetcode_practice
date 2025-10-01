@@ -4,14 +4,18 @@ def isSubsequence(s, t):
     :type t: str
     :rtype: bool
     """
-    curr = 0
-    for i in range(len(t)):
-        pointer = i
-        if (s[curr] == t[pointer]) and (curr == len(s) - 1):
+    if len(s) == 0:
             return True
-        if s[curr] == t[pointer]:
-            curr += 1
-        print(curr, pointer)
+        
+    s_p = 0
+
+    for letter in t:
+        if letter == s[s_p]:
+            s_p += 1
+        if s_p == len(s):
+            return True        
+
+    
     return False
 
 

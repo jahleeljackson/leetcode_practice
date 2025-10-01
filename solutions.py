@@ -43,6 +43,14 @@ x =  '''
     - if not at last element and next element is consecutive, continue
     - if not at last element and next element is not consecutive (ie. [..., 6, 8,..]), 
         append range to array and set start as next element (ie. start = 8)
+
+    **Stack**
+
+    Valid Parentheses:
+    - create dictionary mapping closing parentheses to open ones
+    - iterate through string, if find open parentheses, push to stack
+    - if find closing, check if open version is at top of stack, if so pop from stack, if not return false 
+    - return true of stack is empty by end of loop, else false
     '''
 
 
